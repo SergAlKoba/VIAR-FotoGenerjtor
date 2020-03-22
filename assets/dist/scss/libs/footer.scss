@@ -1,0 +1,371 @@
+footer{
+    z-index: 2;
+    position: relative;
+    padding: 10px 0 20px;
+    &::before{
+        content: '';
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+        height: 180%;
+        position: absolute;
+        background: url('../img/footer-bg.png') no-repeat 50% 0%;
+        background-size: cover;
+    }
+    .footer-content{
+        z-index: 1;
+        padding: 0 15px;
+        position: relative;
+        .logo{
+            bottom: 0;
+            left: 15px;
+            width: 75px;
+            display: block;
+            margin: 0 auto 0;
+            position: absolute;
+            img{
+                width: 100%;
+            }
+        }
+        nav{
+            display: none;
+        }
+        .tel-sosial{
+            width: 280px;
+            margin: 0 auto;
+            .discount{
+                width: 24%;
+                float: left;
+                position: relative;
+                padding-bottom: 18px;
+                &::after{
+                    content: '';
+                    bottom: 0;
+                    left: 50%;
+                    width: 50px;
+                    height: 20px;
+                    position: absolute;
+                    background: url('../img/discount-after.png') no-repeat 50% 50%;
+                    background-size: cover;
+                    -webkit-transform: translate(-50%, 0);
+                    -moz-transform: translate(-50%, 0);
+                    -ms-transform: translate(-50%, 0);
+                    -o-transform: translate(-50%, 0);
+                    transform: translate(-50%, 0);
+                }
+                img{
+                    width: 100%;
+                }
+                span{
+                    top: -8px;
+                    width: 20px;
+                    right: -12px;
+                    height: 20px;
+                    border-radius: 50%;
+                    position: absolute;
+                    background: rgba(225, 30, 30, 0.5);
+                    &::after{
+                        content: '';
+                        top: 50%;
+                        left: 50%;
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        position: absolute;
+                        background: #e11e1e;
+                        -webkit-transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                    }
+                    i{
+                        top: 50%;
+                        left: 50%;
+                        z-index: 1;
+                        font-size: 12px;
+                        color: #ffffff;
+                        font-style: normal;
+                        position: absolute;
+                        -webkit-transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+            .tel{
+                width: 60%;
+                float: right;
+                margin-top: 3px;
+                p{
+                    color: #313131;
+                    font-size: 8px;
+                    font-weight: 400;
+                    line-height: 12px;
+                    text-transform: uppercase;
+                }
+                a{
+                    color: #313131;
+                    font-size: 20px;
+                    font-weight: bold;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                }
+            }
+            .facebook{
+                width: 70%;
+                float: left;
+                padding-left: 28px;
+                position: relative;
+                margin-left: 90px;
+                a{
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                }
+                img{
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    width: 58px;
+                    position: absolute;
+                }
+                p{
+                    z-index: 0;
+                    width: 168px;
+                    font-size: 10px;
+                    color: #99b5d0;
+                    font-weight: 400;
+                    line-height: 14px;
+                    position: relative;
+                    text-transform: uppercase;
+                    padding: 5px 10px 5px 38px;
+                    &::after{
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        z-index: -1;
+                        height: 100%;
+                        border-radius: 5px;
+                        position: absolute;
+                        background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0.3) 100%);
+                    }
+                    span{
+                        display: block;
+                        font-size: 16px;
+                        font-weight: 800;
+                        color: #7c8fa8;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    footer {
+        .footer-content {
+            .logo {
+                float: left;
+                position: static;
+            }
+            .tel-sosial{
+                float: right;
+                .facebook{
+                    width: 80%;
+                    margin-left: 0;
+                    margin-top: 10px;
+                    padding-left: 50px;
+                    img{
+                        width: 72px;
+                    }
+                    p{
+                        width: 100%;
+                        padding: 12px 10px 12px 38px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    footer {
+        .footer-content {
+            .logo{
+                margin-right: 40px;
+            }
+            nav {
+                float: left;
+                display: block;
+                ul{
+                    -webkit-column-count: 3; 
+                    -moz-column-count: 3; 
+                    column-count: 3;
+                    -webkit-column-gap: 30px;
+                    -moz-column-gap: 30px;
+                    column-gap: 30px;
+                }
+                li{
+                    margin-bottom: 15px;
+                    a{
+                        color: #313131;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        -webkit-transition: all 0.5s;
+                        -moz-transition: all 0.5s;
+                        -ms-transition: all 0.5s;
+                        -o-transition: all 0.5s;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: #e11e1e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1280px) {
+
+    footer{
+        &::before {
+            height: 175%;
+        }
+        .footer-content {
+            .logo{
+                margin-right: 80px;
+            }
+            nav {
+                ul {
+                    -webkit-column-gap: 70px;
+                    -moz-column-gap: 70px;
+                    column-gap: 70px;
+                }
+            }
+            .tel-sosial {
+                width: 345px;
+                .discount {
+                    width: 89px;
+                    position: relative;
+                    padding-bottom: 22px;
+                    &::after {
+                        width: 100px;
+                        height: 23px;
+                    }
+                    span {
+                        top: -10px;
+                        width: 34px;
+                        right: -18px;
+                        height: 34px;
+                        &::after {
+                            width: 26px;
+                            height: 26px;
+                        }
+                        i {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .tel {
+                    p {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                    a {
+                        font-size: 24px;
+                        line-height: 35px;
+                    }
+                }
+                .facebook {
+                    width: 260px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+
+    footer{
+        padding: 15px 0 50px;
+        .footer-content{
+            padding: 0 55px;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1700px) {
+    
+    footer {
+        padding: 18px 0 53px;
+        .footer-content{
+            padding: 0 168px 0 174px;
+            .logo {
+                margin-top: 8px;
+                margin-right: 173px;
+            }
+            nav {
+                margin-top: 22px;
+                ul {
+                    -webkit-column-gap: 115px;
+                    -moz-column-gap: 115px;
+                    column-gap: 115px;
+                }
+                li {
+                    margin-bottom: 16px;
+                }
+            }
+            .tel-sosial {
+                width: 385px;
+                .discount {
+                    width: 98px;
+                    padding-bottom: 23px;
+                    span {
+                        top: -4px;
+                    }
+                }
+                .tel {
+                    width: 54%;
+                    margin-top: 9px;
+                    a {
+                        font-size: 27px;
+                        line-height: 41px;
+                    }
+                }
+                .facebook {
+                    width: 280px;
+                    margin-left: 21px;
+                    img {
+                        width: 79px;
+                    }
+                    p {
+                        font-size: 12px;
+                        padding: 15px 10px 15px 45px;
+                        span{
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
