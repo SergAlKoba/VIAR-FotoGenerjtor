@@ -61,9 +61,37 @@ $(document).ready(function(){
       prevArrow: '<button class="slick-arrow prev"><i class="icon-icon22"></i></button>',
     });
 
+    $('.picture').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      nextArrow: '<button class="slick-arrow next"><i class="icon-icon25"></i></button>',
+      prevArrow: '<button class="slick-arrow prev"><i class="icon-icon22"></i></button>',
+    });
+
     jcf.replaceAll();
 
     $('.jcf-fake-input').text('Загрузить фотографии')
+
+    $('.slider-tabs').on('click', 'a', function(){
+      var tabsData = $(this).data('tabs');
+      $('.slider-tabs a').removeClass('active');
+      $(this).addClass('active');
+      $('.tabs-item').removeClass('active');
+      $('.' + tabsData).addClass('active');
+      $('.picture').get(0).slick.setPosition();
+    });
+
+
+    new jQueryCollapse($(".filter-accordion"), {
+      open: function() {
+        this.slideDown(200);
+      },
+      close: function() {
+        this.slideUp(200);
+      }
+    });
+  
 
 });
 

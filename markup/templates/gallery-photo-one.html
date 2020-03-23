@@ -256,12 +256,67 @@
                     <div class="photo-content">
                         <div class="slider-tabs">
                             <ul class="tabs">
-                                <li><a href="jabascript:void(0)">Картина на стене</a></li>
-                                <li><a href="jabascript:void(0)">В интерьере</a></li>
+                                <li><a class="active" data-tabs="tabs-item1" href="jabascript:void(0)">Картина на стене</a></li>
+                                <li><a data-tabs="tabs-item2" href="jabascript:void(0)">В интерьере</a></li>
                             </ul>
-                            <div class="slider-cpntent">
-                                <div class="picture"></div>
-                                <div class="interior"></div>
+                            <div class="tabs-content">
+                                <div class="picture tabs-item tabs-item1 active">
+                                    <div>
+                                        <img src="../img/picture-img.png" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="../img/picture-img.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="interior tabs-item tabs-item2">
+                                    <img src="../img/interior-img.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-filter">
+                            <div class="filter-picture tabs-item tabs-item1 active">
+                                <form>
+                                    <div class="filter-accordion">
+                                        <h2 class="accordion-title open"><span>1.</span> Выберите <span>Форму</span></h2>
+                                        <div class="accordion-content">
+                                            <div class="shapes">
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)"><img src="../img/shapes-img1.png" alt=""></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)"><img src="../img/shapes-img2.png" alt=""></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)"><img src="../img/shapes-img3.png" alt=""></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <h2 class="accordion-title open"><span>2.</span> Выберите <span>Размер</span></h2>
+                                        <div class="accordion-content">2</div>
+                                        <h2 class="accordion-title open"><span>3.</span> Выберите <span>Тип исполнения</span></h2>
+                                        <div class="accordion-content">3</div>
+                                        <h2 class="accordion-title open"><span>4.</span> Выберите <span> Вид холста</span></h2>
+                                        <div class="accordion-content">3</div>
+                                        <h2 class="accordion-title open"><span>5.</span> <span> Художественное оформление</span></h2>
+                                        <div class="accordion-content">3</div>
+                                        <h2 class="accordion-title open"><span>6.</span> <span> Комментарии</span></h2>
+                                        <div class="accordion-content">3</div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="filter-interior tabs-item tabs-item2">
+                                <form>
+                                    <div class="filter-accordion">
+                                        <h2 class="open">1. Выберите Форму</h2>
+                                        <div>1</div>
+                                        <h2>2. Выберите Размер</h2>
+                                        <div>2</div>
+                                        <h2>3. Выберите Тип исполнения</h2>
+                                        <div>3</div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -587,6 +642,8 @@
     <script src="../js/jquery.matchHeight.min.js"></script>
     <script src="../js/jcf.min.js"></script>
     <script src="../js/jcf.file.min.js"></script>
+    <script src="../js/jquery.collapse_storage.min.js"></script>
+    <script src="../js/jquery.collapse.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/script.min.js"></script>
     <script src="../js/gallery-photo-one.min.js"></script>

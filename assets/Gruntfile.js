@@ -23,6 +23,8 @@ grunt.initConfig({
 				'../markup/js/jquery.min.js': ['dist/js/plugin/jquery.js'],
 				'../markup/js/jquery.mCustomScrollbar.min.js': ['dist/js/plugin/jquery.mCustomScrollbar.js'],
 				'../markup/js/BeerSlider.min.js': ['dist/js/plugin/BeerSlider.js'],
+				'../markup/js/jquery.collapse_storage.min.js': ['dist/js/plugin/jquery.collapse_storage.js'],
+				'../markup/js/jquery.collapse.min.js': ['dist/js/plugin/jquery.collapse.js'],
 				'../markup/js/jcf.min.js': ['dist/js/plugin/jcf.js'],
 				'../markup/js/jcf.file.min.js': ['dist/js/plugin/jcf.file.js'],
 				'../markup/js/jcf.radio.min.js': ['dist/js/plugin/jcf.radio.js'],
