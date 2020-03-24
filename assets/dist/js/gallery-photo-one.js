@@ -91,7 +91,25 @@ $(document).ready(function(){
         this.slideUp(200);
       }
     });
-  
+
+    $('.shapes li a').on('click', function(){
+      $('.shapes li a').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    $('.size li a').on('click', function(){
+      $('.size li a').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    $('.execution-item').on('click', function(){
+      $('.execution-item').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    $('.execution-item .img').matchHeight({
+      byRow: false
+    });
 
 });
 
