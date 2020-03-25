@@ -38,11 +38,11 @@
                 <div class="photo-content">
                     <div class="slider-tabs">
                         <ul class="tabs">
-                            <li><a class="active" data-tabs="tabs-item1" href="jabascript:void(0)">Картина на стене</a></li>
-                            <li><a data-tabs="tabs-item2" href="jabascript:void(0)">В интерьере</a></li>
+                            <li><a data-tabs="tabs-item1" href="jabascript:void(0)">Картина на стене</a></li>
+                            <li><a class="active" data-tabs="tabs-item2" href="jabascript:void(0)">В интерьере</a></li>
                         </ul>
                         <div class="tabs-content">
-                            <div class="picture tabs-item tabs-item1 active">
+                            <div class="picture tabs-item tabs-item1">
                                 <div>
                                     <img src="../img/picture-img.png" alt="">
                                 </div>
@@ -50,13 +50,13 @@
                                     <img src="../img/picture-img.png" alt="">
                                 </div>
                             </div>
-                            <div class="interior tabs-item tabs-item2">
+                            <div class="interior tabs-item tabs-item2 active">
                                 <img src="../img/interior-img.png" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="photo-filter">
-                        <div class="filter-picture tabs-item tabs-item1 active">
+                        <div class="filter-picture tabs-item tabs-item1 ">
                             <form>
                                 <div class="filter-accordion">
                                     <h2 class="accordion-title open"><span>1.</span> Выберите <span>Форму</span></h2>
@@ -174,21 +174,84 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="filter-interior tabs-item tabs-item2">
+                        <div class="filter-interior tabs-item tabs-item2 active">
                             <form>
                                 <div class="filter-accordion">
-                                    <h2 class="accordion-title open"><span>1.</span> Выберите <span>Форму</span></h2>
-                                    <div class="accordion-content">1</div>
-                                    <h2 class="accordion-title open"><span>2.</span> Выберите <span>Размер</span></h2>
+                                    <h2 class="accordion-title open"><span>Стандартные интерьеры</span></h2>
+                                    <div class="accordion-content">
+                                        <div class="interior-slider">
+                                            <div>
+                                                <div class="interior-item active" data-interior="../img/interior-slider-img.png">
+                                                    <i class="icon-down-arrow"></i>
+                                                    <img src="../img/interior-slider-img.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="interior-item" data-interior="../img/interior-slider-img2.png">
+                                                    <i class="icon-down-arrow"></i>
+                                                    <img src="../img/interior-slider-img2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="interior-item" data-interior="../img/interior-slider-img3.png">
+                                                    <i class="icon-down-arrow"></i>
+                                                    <img src="../img/interior-slider-img3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="interior-item" data-interior="../img/interior-slider-img2.png">
+                                                    <i class="icon-down-arrow"></i>
+                                                    <img src="../img/interior-slider-img2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="interior-item" data-interior="../img/interior-slider-img.png">
+                                                    <i class="icon-down-arrow"></i>
+                                                    <img src="../img/interior-slider-img.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="interior-item" data-interior="../img/interior-slider-img3.png">
+                                                    <i class="icon-down-arrow"></i>
+                                                    <img src="../img/interior-slider-img3.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="interior-sizes">
+                                            <div class="size-item">
+                                                <span>Размеры стен:</span>
+                                                <ul>
+                                                    <li><input type="text" placeholder="345 см"></li>
+                                                    <li><input type="text" placeholder="284 см"></li>
+                                                </ul>
+                                            </div>
+                                            <div class="size-item">
+                                                <span>Выберите размер картины:</span>
+                                                <ul>
+                                                    <li><input type="text" placeholder="146 см"></li>
+                                                    <li><input type="text" placeholder="89 см"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="range_box">
+                                            <input type="range" class="zoomRange range-input" id="my-range" step="1" min="0" value="30" max="60" />
+                                            <p id="changeSm"><span>20 <i>см</i></span> <span>30 <i>см</i></span></p>
+                                        </div>
+                                    </div>
+                                    <h2 class="accordion-title open"><span>2.</span> Выберите <span>Раму</span></h2>
                                     <div class="accordion-content">2</div>
-                                    <h2 class="accordion-title open"><span>3.</span> Выберите <span>Тип исполнения</span></h2>
-                                    <div class="accordion-content">3</div>
-                                    <h2 class="accordion-title open"><span>4.</span> Выберите <span> Вид холста</span></h2>
-                                    <div class="accordion-content">3</div>
-                                    <h2 class="accordion-title open"><span>5.</span> <span> Художественное оформление</span></h2>
-                                    <div class="accordion-content">3</div>
-                                    <h2 class="accordion-title open"><span>6.</span> <span> Комментарии</span></h2>
-                                    <div class="accordion-content">3</div>
+                                </div>
+                                <div class="total-price">
+                                    <div class="total-title"><span>Итоговая цена</span></div>
+                                    <div class="sum">
+                                        <h4>372 &euro;</h4>
+                                    </div>
+                                    <a href="javascript:void(0)"><span>Добавить в корзину!</span></a>
+                                    <ul>
+                                        <li><strong>Срок изготовления:</strong></li>
+                                        <li>Стандарт - 3 рабочих дня</li>
+                                        <li>Экспресс - 1 рабочие сутки</li>
+                                    </ul>
                                 </div>
                             </form>
                         </div>
@@ -485,6 +548,7 @@
 <script src="../js/jcf.file.min.js"></script>
 <script src="../js/jcf.radio.min.js"></script>
 <script src="../js/jcf.checkbox.min.js"></script>
+<script src="../js/jcf.range.min.js"></script>
 <script src="../js/jquery.collapse_storage.min.js"></script>
 <script src="../js/jquery.collapse.min.js"></script>
 <script src="../js/slick.min.js"></script>
@@ -492,5 +556,6 @@
 <script src="../js/gallery-photo-one.min.js"></script>
 </body>
 </html>
+
 
 

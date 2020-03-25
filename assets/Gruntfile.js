@@ -30,6 +30,7 @@ grunt.initConfig({
 				'../markup/js/jcf.radio.min.js': ['dist/js/plugin/jcf.radio.js'],
 				'../markup/js/jcf.checkbox.min.js': ['dist/js/plugin/jcf.checkbox.js'],
 				'../markup/js/jcf.select.min.js': ['dist/js/plugin/jcf.select.js'],
+				'../markup/js/jcf.range.min.js': ['dist/js/plugin/jcf.range.js'],
 				'../markup/js/slick.min.js': ['dist/js/plugin/slick.js'],
 				'../markup/js/jquery.matchHeight.min.js': ['dist/js/plugin/jquery.matchHeight.js'],
 				'../markup/js/jquery.mask.min.js': ['dist/js/plugin/jquery.mask.js'],

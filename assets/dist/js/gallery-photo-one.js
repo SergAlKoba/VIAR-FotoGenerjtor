@@ -71,7 +71,15 @@ $(document).ready(function(){
 
     jcf.replaceAll();
 
-    $('.jcf-fake-input').text('Загрузить фотографии')
+    $('.jcf-fake-input').text('Загрузить фотографии');
+
+    $('.interior-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      nextArrow: '<a href="javascript:void(0)" class="slick-arrow next"><i class="icon-icon25"></i></a>',
+      prevArrow: '<a href="javascript:void(0)" class="slick-arrow prev"><i class="icon-icon22"></i></a>',
+    });
 
     $('.slider-tabs').on('click', 'a', function(){
       var tabsData = $(this).data('tabs');
@@ -80,6 +88,7 @@ $(document).ready(function(){
       $('.tabs-item').removeClass('active');
       $('.' + tabsData).addClass('active');
       $('.picture').get(0).slick.setPosition();
+      $('.interior-slider').get(0).slick.setPosition();
     });
 
 
@@ -109,6 +118,25 @@ $(document).ready(function(){
 
     $('.execution-item .img').matchHeight({
       byRow: false
+    });
+
+    $('.interior-item').on('click', function(){
+      $('.interior-item').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    $("#my-range").on("input", function () {
+      // $(".rama-height").css({ "height": rh - $(this).val() });
+      // $(".ram").css({ "width": ra - $(this).val() });
+      // $(".rama-corner").css({ 'height': rch - $(this).val() });
+      // $(".rama-corner").css({ 'width': rcw - $(this).val() });
+      // $(".main-photo.active").css({ "padding": ra - $(this).val() });
+      // var numInp = +$("#my-range").val();
+      // var forObj = objNum.find(obj => obj.input === numInp);
+      // $("#changeSm").text(forObj.size)
+      // $(".priceText").text(forObj.price)
+      // // console.log(numInp)
+      // // console.log(forObj)
     });
 
 });
