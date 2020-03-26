@@ -61,25 +61,9 @@ $(document).ready(function(){
       prevArrow: '<button class="slick-arrow prev"><i class="icon-icon22"></i></button>',
     });
 
-    $('.picture').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      nextArrow: '<button class="slick-arrow next"><i class="icon-icon25"></i></button>',
-      prevArrow: '<button class="slick-arrow prev"><i class="icon-icon22"></i></button>',
-    });
-
     jcf.replaceAll();
 
     $('.jcf-fake-input').text('Загрузить фотографии');
-
-    $('.interior-slider').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      nextArrow: '<a href="javascript:void(0)" class="slick-arrow next"><i class="icon-icon25"></i></a>',
-      prevArrow: '<a href="javascript:void(0)" class="slick-arrow prev"><i class="icon-icon22"></i></a>',
-    });
 
     $('.slider-tabs').on('click', 'a', function(){
       var tabsData = $(this).data('tabs');
@@ -95,6 +79,21 @@ $(document).ready(function(){
       });
     });
 
+    $('.picture').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      nextArrow: '<button class="slick-arrow next"><i class="icon-icon25"></i></button>',
+      prevArrow: '<button class="slick-arrow prev"><i class="icon-icon22"></i></button>',
+    });
+
+    $('.interior-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      nextArrow: '<a href="javascript:void(0)" class="slick-arrow next"><i class="icon-icon25"></i></a>',
+      prevArrow: '<a href="javascript:void(0)" class="slick-arrow prev"><i class="icon-icon22"></i></a>',
+    });
 
     new jQueryCollapse($(".filter-accordion"), {
       open: function() {
@@ -135,17 +134,7 @@ $(document).ready(function(){
     });
 
     $("#my-range").on("input", function () {
-      // $(".rama-height").css({ "height": rh - $(this).val() });
-      // $(".ram").css({ "width": ra - $(this).val() });
-      // $(".rama-corner").css({ 'height': rch - $(this).val() });
-      // $(".rama-corner").css({ 'width': rcw - $(this).val() });
-      // $(".main-photo.active").css({ "padding": ra - $(this).val() });
-      // var numInp = +$("#my-range").val();
-      // var forObj = objNum.find(obj => obj.input === numInp);
-      // $("#changeSm").text(forObj.size)
-      // $(".priceText").text(forObj.price)
-      // // console.log(numInp)
-      // // console.log(forObj)
+
     });
 
     $('.ramu-slider').slick({
