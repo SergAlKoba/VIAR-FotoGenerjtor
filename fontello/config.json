@@ -493,6 +493,12 @@
       "search": [
         "down-arrow"
       ]
+    },
+    {
+      "uid": "c709da589c923ba3c2ad48d9fc563e93",
+      "css": "cancel",
+      "code": 59426,
+      "src": "entypo"
     }
   ]
 }

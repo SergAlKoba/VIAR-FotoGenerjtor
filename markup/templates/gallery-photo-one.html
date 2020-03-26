@@ -257,11 +257,11 @@
                     <div class="photo-content">
                         <div class="slider-tabs">
                             <ul class="tabs">
-                                <li><a data-tabs="tabs-item1" href="jabascript:void(0)">Картина на стене</a></li>
-                                <li><a class="active" data-tabs="tabs-item2" href="jabascript:void(0)">В интерьере</a></li>
+                                <li><a class="active" data-tabs="tabs-item1" href="jabascript:void(0)">Картина на стене</a></li>
+                                <li><a data-tabs="tabs-item2" href="jabascript:void(0)">В интерьере</a></li>
                             </ul>
                             <div class="tabs-content">
-                                <div class="picture tabs-item tabs-item1">
+                                <div class="picture tabs-item tabs-item1 active">
                                     <div>
                                         <img src="../img/picture-img.png" alt="">
                                     </div>
@@ -269,13 +269,13 @@
                                         <img src="../img/picture-img.png" alt="">
                                     </div>
                                 </div>
-                                <div class="interior tabs-item tabs-item2 active">
+                                <div class="interior tabs-item tabs-item2">
                                     <img src="../img/interior-img.png" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="photo-filter">
-                            <div class="filter-picture tabs-item tabs-item1 ">
+                            <div class="filter-picture tabs-item tabs-item1 active">
                                 <form>
                                     <div class="filter-accordion">
                                         <h2 class="accordion-title open"><span>1.</span> Выберите <span>Форму</span></h2>
@@ -393,7 +393,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="filter-interior tabs-item tabs-item2 active">
+                            <div class="filter-interior tabs-item tabs-item2">
                                 <form>
                                     <div class="filter-accordion">
                                         <h2 class="accordion-title open"><span>Стандартные интерьеры</span></h2>
@@ -462,11 +462,94 @@
                                             </div>
                                             <div class="range_box">
                                                 <input type="range" class="zoomRange range-input" id="my-range" step="1" min="0" value="30" max="60" />
-                                                <p id="changeSm"><span>20 <i>см</i></span> <span>30 <i>см</i></span></p>
+                                                <p class="changeSm" id="changeSm"><span>146 <i>см</i></span> <span>89 <i>см</i></span></p>
                                             </div>
                                         </div>
                                         <h2 class="accordion-title open"><span>2.</span> Выберите <span>Раму</span></h2>
-                                        <div class="accordion-content">2</div>
+                                        <div class="accordion-content">
+                                            <div class="ramu-slider">
+                                                <div>
+                                                    <div class="ramu-item active" data-interior="../img/ramu-img1.png">
+                                                        <span class="code">1.021.464</span>
+                                                        <div class="img">
+                                                            <i class="icon-down-arrow"></i>
+                                                            <img src="../img/ramu-img1.png" alt="">
+                                                        </div>
+                                                        <span class="price">+ 2 199 &#8381;</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="ramu-item" data-interior="../img/ramu-img2.png">
+                                                        <span class="code">290.703.301</span>
+                                                        <div class="img">
+                                                            <i class="icon-down-arrow"></i>
+                                                            <img src="../img/ramu-img2.png" alt="">
+                                                        </div>
+                                                        <span class="price">+ 2 409 &#8381;</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="ramu-item" data-interior="../img/ramu-img3.png">
+                                                        <span class="code">418.463.091</span>
+                                                        <div class="img">
+                                                            <i class="icon-down-arrow"></i>
+                                                            <img src="../img/ramu-img3.png" alt="">
+                                                        </div>
+                                                        <span class="price">+ 2 009 &#8381;</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="ramu-item" data-interior="../img/ramu-img1.png">
+                                                        <span class="code">1.021.464</span>
+                                                        <div class="img">
+                                                            <i class="icon-down-arrow"></i>
+                                                            <img src="../img/ramu-img1.png" alt="">
+                                                        </div>
+                                                        <span class="price">+ 2 199 &#8381;</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="ramu-item" data-interior="../img/ramu-img2.png">
+                                                        <span class="code">290.703.301</span>
+                                                        <div class="img">
+                                                            <i class="icon-down-arrow"></i>
+                                                            <img src="../img/ramu-img2.png" alt="">
+                                                        </div>
+                                                        <span class="price">+ 2 409 &#8381;</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="ramu-item" data-interior="../img/ramu-img3.png">
+                                                        <span class="code">418.463.091</span>
+                                                        <div class="img">
+                                                            <i class="icon-down-arrow"></i>
+                                                            <img src="../img/ramu-img3.png" alt="">
+                                                        </div>
+                                                        <span class="price">+ 2 009 &#8381;</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="ramu-item" data-interior="../img/ramu-img1.png">
+                                                        <span class="code">1.021.464</span>
+                                                        <div class="img">
+                                                            <i class="icon-down-arrow"></i>
+                                                            <img src="../img/ramu-img1.png" alt="">
+                                                        </div>
+                                                        <span class="price">+ 2 199 &#8381;</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="ramu-item" data-interior="../img/ramu-img2.png">
+                                                        <span class="code">290.703.301</span>
+                                                        <div class="img">
+                                                            <i class="icon-down-arrow"></i>
+                                                            <img src="../img/ramu-img2.png" alt="">
+                                                        </div>
+                                                        <span class="price">+ 2 409 &#8381;</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="total-price">
                                         <div class="total-title"><span>Итоговая цена</span></div>

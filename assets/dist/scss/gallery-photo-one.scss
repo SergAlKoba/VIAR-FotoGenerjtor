@@ -550,6 +550,26 @@
                                 ul{
                                     display: flex;
                                     li{
+                                        margin-right: 10px;
+                                        padding-right: 20px;
+                                        position: relative;
+                                        &::after{
+                                            content: '\E822';
+                                            top: 50%;
+                                            right: 0;
+                                            font-size: 20px;
+                                            color: #dbdbdb;
+                                            position: absolute;
+                                            font-family: 'fontello';
+                                            transform: translate(0, -50%);
+                                        }
+                                        &:last-child{
+                                            margin-right: 0;
+                                            padding-right: 0;
+                                            &::after{
+                                                display: none;
+                                            }
+                                        }
                                         input{
                                             width: 85px;
                                             height: 25px;
@@ -568,6 +588,7 @@
                             }
                         }
                         .range_box{
+                            margin-bottom: 10px;
                             .jcf-range {
                                 width: 100%;
                                 display: block;
@@ -584,10 +605,12 @@
                                     .jcf-range-display-wrapper{
                                         width: 100%;
                                         height: 4px;
+                                        position: absolute;
                                     }
                                     .jcf-range-track{
                                         width: 100%;
                                         height: 4px;
+                                        position: absolute;
                                         .jcf-range-handle{
                                             top: 50%;
                                             width: 18px;
@@ -600,6 +623,99 @@
                                         }
                                     }
                                 }
+                            }
+                            .changeSm{
+                                display: flex;
+                                justify-content: space-between;
+                                span{
+                                    color: #313131;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    line-height: 20px;
+                                    display: inline-block;
+                                    i{
+                                        color: #a6a6a6;
+                                        font-style: normal;
+                                    }
+                                }
+                            }
+                        }
+                        .ramu-slider{
+                            padding: 0 5px;
+                            margin-bottom: 10px;
+                            .ramu-item{
+                                padding: 7px;
+                                cursor: pointer;
+                                position: relative;
+                                .img{
+                                    display: flex;
+                                    position: relative;
+                                    align-items: center;
+                                }
+                                img{
+                                    z-index: 0;
+                                    width: 100%;
+                                    position: relative;
+                                }
+                                i{
+                                    top: 50%;
+                                    left: 50%;
+                                    z-index: 2;
+                                    font-size: 30px;
+                                    color: #6ac259;
+                                    position: absolute;
+                                    transform: translate(-50%, -50%) scale(0);
+                                    transition: all 0.3s;
+                                }
+                                .code{
+                                    display: block;
+                                    color: #313131;
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    line-height: 18px;
+                                    text-align: center;
+                                    padding-bottom: 5px;
+                                    letter-spacing: 0.14px;
+                                }
+                                .price{
+                                    display: block;
+                                    color: #8c535b;
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    padding-top: 5px;
+                                    line-height: 18px;
+                                    text-align: center;
+                                    letter-spacing: 0.14px;
+                                }
+                            }
+                            .ramu-item.active{
+                                i{
+                                    transform: translate(-50%, -50%) scale(1);
+                                }
+                            }
+                            .slick-arrow{
+                                top: 50%;
+                                z-index: 2;
+                                border: none;
+                                position: absolute;
+                                background: transparent;
+                                transform: translate(0, -50%);
+                                &:hover{
+                                    i{
+                                        color: #9e525b;
+                                    }
+                                }
+                                i{
+                                    font-size: 15px;
+                                    color: #858585;
+                                    transition: all 0.5s;
+                                }
+                            }
+                            .prev{
+                                left: -15px;
+                            }
+                            .next{
+                                right: -15px;
                             }
                         }
                     }
@@ -2591,6 +2707,16 @@
                                             i {
                                                 font-size: 16px;
                                             }
+                                        }
+                                    }
+                                }
+                                .ramu-slider{
+                                    .ramu-item{
+                                        .code{
+                                            font-size: 14px;
+                                        }
+                                        .price{
+                                            font-size: 14px;
                                         }
                                     }
                                 }

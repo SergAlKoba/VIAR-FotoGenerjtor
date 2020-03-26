@@ -89,6 +89,10 @@ $(document).ready(function(){
       $('.' + tabsData).addClass('active');
       $('.picture').get(0).slick.setPosition();
       $('.interior-slider').get(0).slick.setPosition();
+      $('.ramu-slider').get(0).slick.setPosition();
+      $('.ramu-item .img').matchHeight({
+        byRow: false
+      });
     });
 
 
@@ -125,6 +129,11 @@ $(document).ready(function(){
       $(this).addClass('active');
     });
 
+    $('.ramu-item').on('click', function(){
+      $('.ramu-item').removeClass('active');
+      $(this).addClass('active');
+    });
+
     $("#my-range").on("input", function () {
       // $(".rama-height").css({ "height": rh - $(this).val() });
       // $(".ram").css({ "width": ra - $(this).val() });
@@ -137,6 +146,19 @@ $(document).ready(function(){
       // $(".priceText").text(forObj.price)
       // // console.log(numInp)
       // // console.log(forObj)
+    });
+
+    $('.ramu-slider').slick({
+      rows: 2,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      nextArrow: '<a href="javascript:void(0)" class="slick-arrow next"><i class="icon-icon25"></i></a>',
+      prevArrow: '<a href="javascript:void(0)" class="slick-arrow prev"><i class="icon-icon22"></i></a>',
+    });
+
+    $('.ramu-item .img').matchHeight({
+      byRow: false
     });
 
 });
