@@ -260,6 +260,15 @@ $(document).ready(function(){
       byRow: false
     });
 
+    $('.effects-item').on('click', function(){
+      $('.effects-item').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    $('.effects-item .img').matchHeight({
+      byRow: false
+    });
+
     $('.interior-item').on('click', function(){
       $('.interior-item').removeClass('active');
       $(this).addClass('active');
@@ -287,6 +296,17 @@ $(document).ready(function(){
       byRow: false
     });
 
+    $('.product-download .jcf-button-content').text('Загрузить');
+
+    $('.imageFile').change(function(){ 
+      $('.product-download .jcf-extension-png .jcf-button-content').text('+ Х');
+    });
+
+    $('.product-download .img').matchHeight({
+      byRow: false
+    });
+    
+
 });
 
 $(window).resize(function(){
@@ -296,5 +316,9 @@ $(window).resize(function(){
       $('.stages-items').slick('unslick');
       
     }
+
+    $('.product-download .img').matchHeight({
+      byRow: false
+    });
 
 });
