@@ -289,7 +289,7 @@ $(document).ready(function(){
     });
 
     $("#my-range").on("input", function () {
-
+      
     });
 
     $('.ramu-slider').slick({
@@ -315,6 +315,8 @@ $(document).ready(function(){
       byRow: false
     });
 
+    
+
 });
 
 $(window).resize(function(){
@@ -324,3 +326,5 @@ $(window).resize(function(){
   });
 
 });
+
+

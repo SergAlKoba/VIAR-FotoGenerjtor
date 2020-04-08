@@ -71,6 +71,7 @@ grunt.initConfig({
 				'../markup/js/graphic-interior.min.js': ['dist/js/graphic-interior.js'],
 				'../markup/js/portrait-name.min.js': ['dist/js/portrait-name.js'],
 				'../markup/js/oil-portrait.min.js': ['dist/js/oil-portrait.js'],
+				'../markup/js/modularGenerator.min.js': ['dist/js/modularGenerator.js'],
 			}
 		}
 	},
