@@ -199,6 +199,61 @@
                                 }
                             }
                         }
+                        .size-person{
+                            margin: 0 0 0 50px;
+                            li{
+                                width: 50%;
+                            }
+                        }
+                        .number-people{
+                            margin-top: 10px;
+                            label {
+                                color: #2d2d2d;
+                                font-size: 15px;
+                                font-weight: 700;
+                                line-height: 20px;
+                                margin-bottom: 5px;
+                                letter-spacing: 0.17px;
+                            }
+                            div{
+                                display: flex;
+                                margin: 5px 0 10px;
+                                input{
+                                    width: 70%;
+                                    height: 35px;
+                                    padding: 0 10px;
+                                    font-size: 15px;
+                                    color: #313131;
+                                    line-height: 20px;
+                                    border: 1px solid #c5a9ad;
+                                }
+                                button{
+                                    width: 30%;
+                                    height: 35px;
+                                    border: none;
+                                    font-size: 15px;
+                                    color: #313131;
+                                    font-weight: 700;
+                                    line-height: 20px;
+                                    letter-spacing: 0.15px;
+                                    background-color: #dfa2aa;
+                                }
+                            }
+                            span{
+                                color: #313131;
+                                font-size: 15px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                letter-spacing: 0.17px;
+                                strong {
+                                    margin-left: 5px;
+                                    color: #2d2d2d;
+                                    font-weight: 900;
+                                    display: inline-block;
+                                    transition: all 0.5s;
+                                }
+                            }
+                        }
                         .execution{
                             margin: 0 -1%;
                             display: flex;
